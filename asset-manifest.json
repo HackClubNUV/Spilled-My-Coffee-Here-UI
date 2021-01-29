@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Spilled-My-Coffee-Here-UI/static/css/main.5632a461.chunk.css",
+    "main.js": "/Spilled-My-Coffee-Here-UI/static/js/main.4dc059a0.chunk.js",
+    "main.js.map": "/Spilled-My-Coffee-Here-UI/static/js/main.4dc059a0.chunk.js.map",
+    "runtime-main.js": "/Spilled-My-Coffee-Here-UI/static/js/runtime-main.a694134d.js",
+    "runtime-main.js.map": "/Spilled-My-Coffee-Here-UI/static/js/runtime-main.a694134d.js.map",
+    "static/js/2.8f8fb8f2.chunk.js": "/Spilled-My-Coffee-Here-UI/static/js/2.8f8fb8f2.chunk.js",
+    "static/js/2.8f8fb8f2.chunk.js.map": "/Spilled-My-Coffee-Here-UI/static/js/2.8f8fb8f2.chunk.js.map",
+    "static/js/3.2e03ce57.chunk.js": "/Spilled-My-Coffee-Here-UI/static/js/3.2e03ce57.chunk.js",
+    "static/js/3.2e03ce57.chunk.js.map": "/Spilled-My-Coffee-Here-UI/static/js/3.2e03ce57.chunk.js.map",
+    "index.html": "/Spilled-My-Coffee-Here-UI/index.html",
+    "static/css/main.5632a461.chunk.css.map": "/Spilled-My-Coffee-Here-UI/static/css/main.5632a461.chunk.css.map",
+    "static/js/2.8f8fb8f2.chunk.js.LICENSE.txt": "/Spilled-My-Coffee-Here-UI/static/js/2.8f8fb8f2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a694134d.js",
+    "static/js/2.8f8fb8f2.chunk.js",
+    "static/css/main.5632a461.chunk.css",
+    "static/js/main.4dc059a0.chunk.js"
+  ]
+}
