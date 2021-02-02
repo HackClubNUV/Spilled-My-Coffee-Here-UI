@@ -1,27 +1,7 @@
 import React, { useState } from 'react'
 import data from '../DummyData.json'
 import LeaderboardCard from './LeaderboardCard'
-
-const styles = {
-    container: {
-        'backgroundColor': '#000',
-        'border': '2px dotted #f20089'
-    },
-    title: {
-        color: ' #f20089',
-        textTransform: 'uppercase'
-    },
-    textContainer: {
-        border: '4px dotted #f20089',
-        borderRightStyle: 'none',
-        borderLeftStyle: 'none'
-    },
-    searchBox: {
-        backgroundColor: '#121212',
-        color: '#f20089',
-        borderTopStyle: 'none'
-    }
-}
+import './leaderboard.styles.css'
 
 const Leaderboard = () => {
 
@@ -46,30 +26,36 @@ const Leaderboard = () => {
     };
 
     return (
-        <div className='bg-black h-full flex flex-col justify-center items-center'>
-            <div className="w-8/12 flex justify-center py-5 mt-3 mb-16" style={styles.textContainer}>
-                <h1 className="text-4xl font-extrabold" style={styles.title}>
+        <div className='h-screen flex flex-col justify-center items-center mainContainer'>
+            <div className="w-8/12 flex justify-center py-3 mb-10 textContainer">
+                <h1 className="text-2xl font-extrabold title">
                     Leaderboard
                 </h1>
             </div>
-            <div className="w-full h-screen flex flex-col justify-center items-center">
-            <div class="shadow flex w-full md:w-8/12 mb-5" style={styles.searchBox}>
+            <div class="shadow flex w-full md:w-8/12 searchBox">
                 <input
-                    class="w-full p-3" type="text" placeholder="Search..." style={styles.searchBox}
+                    class="w-full p-3 searchBox" type="text" placeholder="Search..."
                     onChange={(text) => searchFilterFunction(text.target.value)}
                 />
             </div>
-            <div className="container w-full lg:w-8/12 h-screen mb-10 flex-grow overflow-y-auto overscroll-contain"
-                style={styles.container}>
+            <div className="container w-full lg:w-8/12 h-screen mb-3 flex-grow 
+            overflow-y-auto overscroll-contain scrollbar-thin scrollbar-thumb-pink-600
+            scrollbar-track-gray-900 content"
+            >
                 <div className="sticky top-0 z-50">
-                    <LeaderboardCard data={{ rank: "RANK", fullName: "NAME", "level": "LEVEL", points: "POINTS" }} />
+                    <LeaderboardCard
+                        data={{ rank: "RANK", fullName: "NAME", "level": "LEVEL", points: "POINTS" }}
+                        className="leaderboard-card"
+                    />
                 </div>
                 {
                     filteredUsers.map(element => {
-                        return <LeaderboardCard key={element.rank} data={element} />
+                        return <LeaderboardCard
+                            key={element.rank} data={element}
+                            className="leaderboard-card"
+                        />
                     })
                 }
-                </div>
             </div>
         </div>
     )

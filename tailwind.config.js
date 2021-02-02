@@ -3,7 +3,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ['Orbitron', 'sans-serif'],
+      sans: ['ROGFonts', 'Orbitron', 'sans-serif'],
       serif: ['Antic Slab', 'serif'],
     },
     extend: {},
@@ -11,5 +11,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar')
+  ],
 }

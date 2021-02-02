@@ -1,0 +1,54 @@
+.mainContainer{
+    background: rgb(218, 71, 125);
+    background-image: radial-gradient(circle,#da477d 0%, #21161a 65%, #060709 100%);
+}
+
+.content{
+    background-color: #060709;
+    border: 2px dotted #da477d;
+}
+
+.title{
+    text-transform: uppercase;
+    color: #da477d;
+    text-shadow: 2px 3px 7px #000;
+    letter-spacing:3px;
+}
+
+.textContainer{
+    border: 4px dotted #da477d;
+    border-right-style: none;
+    border-left-style: none;
+}
+
+.searchBox{
+    background-color: #21161a;
+    border-top-style: none;
+    color: "#da477d";
+}
+
+.card-container{
+    background-color: #21161a;
+    color: white;
+}
+
+.card-titleContainer{
+    border-bottom: 1px solid #da477d;
+    color: #da477d;
+}
+
+.card-info{
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.card-name{
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card-level{
+    font-size: 0.75em;
+    text-transform: uppercase;
+}

@@ -3,3 +3,8 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Orbitron:wght@600&display=swap');
+
+@font-face {
+  font-family: 'ROGFonts';
+  src: local('ROGFonts'), url(./assets/fonts/ROGFonts-Regular.otf) format('opentype');
+}
