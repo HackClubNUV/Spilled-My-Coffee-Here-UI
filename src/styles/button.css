@@ -1,0 +1,106 @@
+button:focus {
+    border: none;
+    outline: none;
+  }
+  
+  .button {
+    display: block;
+    position: relative;
+    background: #1F1F1F;
+    width: 200px;
+    height: 80px;
+    margin: 10% 0%;
+    line-height: 70px;
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    box-sizing: border-box;
+  }
+  
+  .button.border {
+    border: 4px solid  #00FFFF;
+    border-left: none;
+    border-right: none;
+  }
+  
+  .button.ribbon-outset.border:after,
+  .button.ribbon-outset.border:before {
+    top: 50%;
+    content: " ";
+    height: 43px;
+    width: 43px;
+    position: absolute;
+    pointer-events: none;
+    background: #1F1F1F;
+  }
+  .button.ribbon-outset.border:after {
+    left: 0px;
+    margin-top: -40px;
+    transform-origin: 0 0;
+    box-sizing: border-box;
+    border-bottom: 4px solid  #00FFFF;
+    border-left: 4px solid  #00FFFF;
+    transform: rotate(57.5deg) skew(30deg);
+  }
+  .button.ribbon-outset.border:before {
+    right: -42px;
+    margin-top: -40px;
+    transform-origin: 0 0;
+    box-sizing: border-box;
+    border-top: 4px solid  #00FFFF;
+    border-right: 4px solid  #00FFFF;
+    transform: rotate(57.5deg) skew(30deg);
+  }
+  
+  .s-button {
+    display: block;
+    position: relative;
+    background: transparent;
+    width: 200px;
+    height: 80px;
+    margin: 10% 0%;
+    line-height: 70px;
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    box-sizing: border-box;
+  }
+  
+  .s-button.s-border {
+    border: 4px solid  #00FFFF;
+    border-left: none;
+    border-right: none;
+  }
+  
+  .s-button.s-ribbon-outset.s-border:after,
+  .s-button.s-ribbon-outset.s-border:before {
+    top: 50%;
+    content: " ";
+    height: 43px;
+    width: 43px;
+    position: absolute;
+    pointer-events: none;
+    background: #1F1F1F;
+  }
+  .s-button.s-ribbon-outset.s-border:after {
+    left: 0px;
+    margin-top: -40px;
+    transform-origin: 0 0;
+    box-sizing: border-box;
+    border-bottom: 4px solid  #00FFFF;
+    border-left: 4px solid  #00FFFF;
+    transform: rotate(57.5deg) skew(30deg);
+  }
+  .s-button.s-ribbon-outset.s-border:before {
+    right: -42px;
+    margin-top: -40px;
+    transform-origin: 0 0;
+    box-sizing: border-box;
+    border-top: 4px solid  #00FFFF;
+    border-right: 4px solid  #00FFFF;
+    transform: rotate(57.5deg) skew(30deg);
+  }
