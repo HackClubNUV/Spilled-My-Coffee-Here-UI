@@ -28,18 +28,18 @@ const Leaderboard = () => {
     return (
         <div className='h-screen flex flex-col justify-center items-center mainContainer'>
             <div className="w-8/12 flex justify-center py-3 mb-10 textContainer">
-                <h1 className="text-2xl font-extrabold title">
+                <h1 className="text-lg sm:text-2xl font-extrabold title">
                     Leaderboard
                 </h1>
             </div>
-            <div class="shadow flex w-full md:w-8/12 searchBox">
+            <div class="shadow flex w-11/12 md:w-8/12 searchBox">
                 <input
-                    class="w-full p-3 searchBox" type="text" placeholder="Search..."
+                    class="w-full p-3 searchBox text-white text-md" type="text" placeholder="Search..."
                     onChange={(text) => searchFilterFunction(text.target.value)}
                 />
             </div>
-            <div className="container w-full lg:w-8/12 h-screen mb-3 flex-grow 
-            overflow-y-auto overscroll-contain scrollbar-thin scrollbar-thumb-pink-600
+            <div className="container w-11/12 md:w-8/12 h-screen mb-3 flex-grow 
+            overflow-y-auto scrollbar-thin scrollbar-thumb-pink-600
             scrollbar-track-gray-900 content"
             >
                 <div className="sticky top-0 z-50">
