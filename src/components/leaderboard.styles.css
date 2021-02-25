@@ -41,10 +41,14 @@
 .card-titleContainer{
     border-bottom: 1px solid #da477d;
     color: #da477d;
+    
 }
 
 .card-titleContainer:hover{
-    transform: scale(1,1);
+    transform:none;
+    border-style:none;
+    border-bottom: 1px solid #da477d;
+    box-shadow: none;
 }
 
 .card-info{

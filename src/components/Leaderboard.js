@@ -32,10 +32,10 @@ const Leaderboard = () => {
                     Leaderboard
                 </h1>
             </div>
-            <div class="shadow flex w-11/12 md:w-8/12 searchBox">
+            <div className="shadow flex w-11/12 md:w-8/12 searchBox">
                 <input
-                    class="w-full p-3 searchBox text-white text-md" type="text" placeholder="Search..."
-                    onChange={(text) => searchFilterFunction(text.target.value)}
+                    className="w-full p-3 searchBox text-white text-md" type="text" placeholder="Search..."
+                    onChange={(text) => searchFilterFunction(text.target.value)} value={search}
                 />
             </div>
             <div className="container w-11/12 md:w-8/12 h-screen mb-3 flex-grow 
