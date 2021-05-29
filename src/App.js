@@ -1,14 +1,21 @@
-import './App.css';
-import Landing from './components/Landing'
-import About from './components/About';
+import React from 'react';
+
+import Navbar from './components/Navbar';
+import Landing from './components/Landing';
+// import About from './components/About';
 import Leaderboard from './components/Leaderboard';
 import Footer from './components/Footer';
+
+import './App.css';
+
+require('dotenv').config();
 
 function App() {
   return (
     <>
+      <Navbar/>
       <Landing />
-      <About />
+      {/* <About /> */}
       <Leaderboard />
       <Footer />
     </>

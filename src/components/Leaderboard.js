@@ -1,18 +1,36 @@
-import React, { useState } from 'react'
-import data from '../DummyData.json'
-import LeaderboardCard from './LeaderboardCard'
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
+import LeaderboardCard from './LeaderboardCard';
+
 import './leaderboard.styles.css'
 
 const Leaderboard = () => {
 
+    const [data, setData] = useState([]);
     const [search, setSearch] = useState('');
-    const [filteredUsers, setFilteredUsers] = useState(data);
+    const [filteredUsers, setFilteredUsers] = useState([]);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        if (loading) {
+            axios.get('https://spilled-my-coffee-here.herokuapp.com/users', {
+                headers: { 'Content-Type': 'application/json' },
+            })
+            .then(result => {
+                setData(result.data.users);
+                setLoading(false);
+                setFilteredUsers(result.data.users);
+            })
+            .catch(console.error);
+        }
+    }, [loading]);
 
     const searchFilterFunction = (text) => {
         if (text) {
             const newData = data.filter(function (item) {
-                const userData = item.fullName
-                    ? item.fullName.toUpperCase()
+                const userData = item.FullName
+                    ? item.FullName.toUpperCase()
                     : ''.toUpperCase();
                 const textData = text.toUpperCase();
                 return userData.indexOf(textData) > -1;
@@ -44,14 +62,14 @@ const Leaderboard = () => {
             >
                 <div className="sticky top-0 z-50">
                     <LeaderboardCard
-                        data={{ rank: "RANK", fullName: "NAME", "level": "LEVEL", points: "POINTS" }}
+                        data={{ rank: "RANK", FullName: "NAME", "level": "LEVEL", points: "POINTS" }}
                         className="leaderboard-card"
                     />
                 </div>
                 {
                     filteredUsers.map(element => {
                         return <LeaderboardCard
-                            key={element.rank} data={element}
+                            key={element._id} data={element}
                             className="leaderboard-card"
                         />
                     })

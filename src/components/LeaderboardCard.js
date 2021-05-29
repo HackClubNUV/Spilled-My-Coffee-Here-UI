@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 const LeaderboardCard = ({ data }) => {
 
-    const { rank, fullName, level, points } = data;
+    const { rank, FullName, level, points } = data;
     const containerClassnames = classNames({
         "container w-11/12 sm:w-8/12 h-16 my-2 mx-auto flex flex-row justify-evenly items-center shadow-xl card-container": true,
         "w-full sm:w-full mt-0  h-20 bg-black -ml-2 text-pink card-titleContainer": rank === "RANK",
@@ -16,7 +16,7 @@ const LeaderboardCard = ({ data }) => {
         <div className={containerClassnames}>
             <h6 className="card-info">{rank}</h6>
             <div className="container w-2/6 flex flex-col items-center">
-                <h6 className="card-name">{fullName}</h6>
+                <h6 className="card-name">{FullName}</h6>
                 <p className="card-level"> {level}</p>
             </div>
             <h6 className="card-info">{points}</h6>
